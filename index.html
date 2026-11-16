@@ -1,0 +1,2068 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101b2d">
+<meta name="description" content="Itunu Blessing Egbowon — Sales Development, Customer Experience, Lead Generation, CRM and IT Support professional.">
+<meta name="author" content="Itunu Blessing Egbowon">
+<title>Itunu Blessing Egbowon | Professional Portfolio</title>
+
+<style>
+/* =========================================
+   ITUNU BLESSING EGBOWON — PORTFOLIO
+   Complete HTML, CSS and JavaScript
+========================================= */
+
+:root {
+  --navy: #101b2d;
+  --navy-light: #182840;
+  --teal: #18b6a4;
+  --teal-dark: #087e76;
+  --gold: #e9bd70;
+  --cream: #f7f8f6;
+  --white: #ffffff;
+  --ink: #182536;
+  --muted: #697687;
+  --line: #e6eaf0;
+  --soft-teal: #e8f7f4;
+  --shadow: 0 18px 55px rgba(16, 27, 45, .10);
+  --radius: 22px;
+  --max: 1160px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(var(--max), 90%);
+  margin: auto;
+}
+
+section {
+  padding: 100px 0;
+  scroll-margin-top: 85px;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--teal-dark);
+  text-transform: uppercase;
+  font-size: .76rem;
+  letter-spacing: 2.5px;
+  font-weight: 800;
+  margin-bottom: 13px;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 27px;
+  height: 2px;
+  background: var(--gold);
+}
+
+.section-heading h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--navy);
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+  margin-bottom: 15px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 650px;
+}
+
+.gradient-text {
+  background: linear-gradient(100deg, var(--teal), #6ed4c2, var(--gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 13px 23px;
+  font-size: .91rem;
+  font-weight: 750;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.btn-primary {
+  background: var(--teal);
+  color: var(--navy);
+  box-shadow: 0 10px 25px rgba(24, 182, 164, .22);
+}
+
+.btn-primary:hover {
+  background: #5bd1c0;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border-color: rgba(255,255,255,.45);
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--navy);
+  transform: translateY(-3px);
+}
+
+.btn-dark {
+  background: var(--navy);
+  color: white;
+}
+
+.btn-dark:hover {
+  background: var(--teal-dark);
+  transform: translateY(-3px);
+}
+
+/* NAVIGATION */
+
+header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1000;
+  background: rgba(16, 27, 45, .96);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.navbar {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 850;
+  letter-spacing: .5px;
+}
+
+.logo span {
+  color: var(--teal);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #d5deea;
+  font-size: .84rem;
+  font-weight: 650;
+  transition: .25s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--teal);
+}
+
+.nav-links .nav-contact {
+  background: var(--teal);
+  color: var(--navy);
+  padding: 9px 17px;
+  border-radius: 30px;
+}
+
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 760px;
+  padding: 145px 0 85px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(24,182,164,.18), transparent 27%),
+    radial-gradient(circle at 12% 90%, rgba(233,189,112,.10), transparent 30%),
+    linear-gradient(125deg, #101b2d, #172b43 65%, #102b38);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 470px;
+  height: 470px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 50%;
+  right: -160px;
+  bottom: -190px;
+  box-shadow: 0 0 0 45px rgba(255,255,255,.018),
+              0 0 0 90px rgba(255,255,255,.015);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  align-items: center;
+  gap: 65px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #aeece2;
+  background: rgba(24,182,164,.12);
+  border: 1px solid rgba(24,182,164,.25);
+  border-radius: 40px;
+  padding: 8px 15px;
+  font-size: .78rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #58d9a9;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(88,217,169,.13);
+}
+
+.hero h1 {
+  font-size: clamp(2.7rem, 5.5vw, 5rem);
+  line-height: 1.06;
+  letter-spacing: -2.8px;
+  margin-bottom: 22px;
+}
+
+.hero h1 span {
+  color: var(--teal);
+}
+
+.hero-description {
+  color: #c4d0df;
+  max-width: 640px;
+  font-size: 1.06rem;
+  margin-bottom: 28px;
+}
+
+.hero-role {
+  color: var(--gold);
+  font-weight: 750;
+  font-size: 1rem;
+  margin-bottom: 13px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 30px;
+}
+
+.hero-socials {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-top: 32px;
+}
+
+.hero-socials a {
+  color: #c8d4e2;
+  font-size: .84rem;
+  transition: .25s;
+}
+
+.hero-socials a:hover {
+  color: var(--teal);
+}
+
+.hero-photo-wrap {
+  position: relative;
+  max-width: 390px;
+  margin: auto;
+}
+
+.photo-frame {
+  position: relative;
+  padding: 12px;
+  border: 1px solid rgba(24,182,164,.55);
+  border-radius: 190px 190px 35px 35px;
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 30px 70px rgba(0,0,0,.25);
+  animation: floatPhoto 6s ease-in-out infinite;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 180px 180px 25px 25px;
+  background: #e9edf1;
+}
+
+.photo-fallback {
+  width: 100%;
+  height: 490px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(145deg, #e9f4f1, #d9e7e6);
+  color: var(--navy);
+  border-radius: 180px 180px 25px 25px;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.photo-note {
+  position: absolute;
+  bottom: 24px;
+  left: -45px;
+  background: white;
+  color: var(--navy);
+  padding: 13px 18px;
+  border-radius: 13px;
+  box-shadow: var(--shadow);
+  font-size: .8rem;
+  font-weight: 750;
+}
+
+.photo-note span {
+  display: block;
+  color: var(--teal-dark);
+  font-size: .72rem;
+  font-weight: 600;
+}
+
+@keyframes floatPhoto {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* INTRO STRIP */
+
+.intro-strip {
+  background: white;
+  border-bottom: 1px solid var(--line);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 27px 0;
+}
+
+.intro-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: .83rem;
+}
+
+.intro-item strong {
+  display: block;
+  color: var(--navy);
+  font-size: .9rem;
+}
+
+.intro-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  color: var(--teal-dark);
+  background: var(--soft-teal);
+  border-radius: 13px;
+  font-size: 1.1rem;
+}
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-card {
+  background: var(--navy);
+  color: white;
+  border-radius: var(--radius);
+  padding: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card::after {
+  content: "“";
+  position: absolute;
+  top: -25px;
+  right: 18px;
+  font-size: 12rem;
+  color: rgba(255,255,255,.06);
+  font-family: Georgia, serif;
+}
+
+.about-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-card p {
+  color: #cbd7e5;
+  font-size: .94rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-content p {
+  color: var(--muted);
+  margin-bottom: 17px;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.value-item {
+  padding: 15px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.value-item span {
+  color: var(--teal-dark);
+  margin-right: 7px;
+}
+
+/* EXPERIENCE */
+
+.experience {
+  background: white;
+}
+
+.timeline {
+  max-width: 850px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  width: 2px;
+  background: #d9e9e6;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 38px 48px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 2px;
+  top: 7px;
+  width: 18px;
+  height: 18px;
+  border: 4px solid white;
+  border-radius: 50%;
+  background: var(--teal);
+  box-shadow: 0 0 0 2px var(--teal);
+}
+
+.timeline-card {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  padding: 25px;
+  border-radius: 17px;
+  transition: .3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateX(6px);
+  box-shadow: var(--shadow);
+}
+
+.timeline-card h3 {
+  color: var(--navy);
+  font-size: 1.12rem;
+}
+
+.timeline-card h4 {
+  color: var(--teal-dark);
+  font-size: .9rem;
+  margin: 3px 0 8px;
+}
+
+.timeline-date {
+  display: inline-block;
+  font-size: .76rem;
+  color: var(--muted);
+  background: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.timeline-card p {
+  color: var(--muted);
+  font-size: .91rem;
+}
+
+/* IMPACT */
+
+.impact {
+  background: var(--navy);
+  color: white;
+}
+
+.impact .section-heading h2 {
+  color: white;
+}
+
+.impact .section-heading p {
+  color: #bdcad8;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.impact-card {
+  padding: 26px 20px;
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 17px;
+  text-align: center;
+  transition: .3s;
+}
+
+.impact-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--teal);
+}
+
+.impact-card h3 {
+  color: var(--teal);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.2;
+  margin-bottom: 9px;
+}
+
+.impact-card p {
+  color: #c4d0df;
+  font-size: .82rem;
+}
+
+/* SKILLS */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-card {
+  padding: 26px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  transition: .3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.skill-icon {
+  width: 47px;
+  height: 47px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--soft-teal);
+  color: var(--teal-dark);
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.skill-card h3 {
+  color: var(--navy);
+  font-size: 1.05rem;
+  margin-bottom: 9px;
+}
+
+.skill-card p {
+  color: var(--muted);
+  font-size: .88rem;
+}
+
+/* PROJECTS */
+
+.projects {
+  background: white;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 19px;
+  padding: 28px;
+  transition: .35s;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--shadow);
+  border-color: rgba(24,182,164,.5);
+}
+
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.project-symbol {
+  width: 53px;
+  height: 53px;
+  display: grid;
+  place-items: center;
+  background: var(--navy);
+  color: var(--teal);
+  border-radius: 15px;
+  font-size: 1.35rem;
+}
+
+.project-label {
+  color: var(--teal-dark);
+  background: var(--soft-teal);
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: .72rem;
+  font-weight: 750;
+}
+
+.project-card h3 {
+  color: var(--navy);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-bottom: 17px;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.project-tags span {
+  background: white;
+  border: 1px solid var(--line);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: .72rem;
+  color: #526174;
+}
+
+.project-link {
+  color: var(--teal-dark);
+  font-weight: 800;
+  font-size: .86rem;
+}
+
+.project-link:hover {
+  color: var(--navy);
+}
+
+/* EDUCATION */
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.education-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 28px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  transition: .3s;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.education-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  background: var(--soft-teal);
+  color: var(--teal-dark);
+  border-radius: 15px;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.education-card h3 {
+  color: var(--navy);
+  font-size: 1.05rem;
+}
+
+.education-card p {
+  color: var(--muted);
+  font-size: .87rem;
+  margin-top: 5px;
+}
+
+/* SERVICES */
+
+.services {
+  background: white;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  padding: 26px;
+  border-radius: 17px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+}
+
+.service-card h3 {
+  color: var(--navy);
+  margin-bottom: 9px;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: .88rem;
+}
+
+/* CONTACT */
+
+.contact {
+  background:
+    radial-gradient(circle at 90% 10%, rgba(24,182,164,.13), transparent 30%),
+    var(--navy);
+  color: white;
+}
+
+.contact .section-heading h2 {
+  color: white;
+}
+
+.contact .section-heading p {
+  color: #c2cfdd;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 45px;
+  align-items: start;
+}
+
+.contact-info {
+  display: grid;
+  gap: 17px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 17px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.045);
+  border-radius: 13px;
+}
+
+.contact-item .icon {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(24,182,164,.15);
+  color: var(--teal);
+  border-radius: 12px;
+}
+
+.contact-item small {
+  display: block;
+  color: #aebdcd;
+  font-size: .75rem;
+}
+
+.contact-item a,
+.contact-item strong {
+  color: white;
+  font-size: .88rem;
+  overflow-wrap: anywhere;
+}
+
+.contact-form {
+  padding: 30px;
+  border-radius: 19px;
+  background: white;
+  color: var(--ink);
+}
+
+.contact-form h3 {
+  font-size: 1.35rem;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.contact-form > p {
+  color: var(--muted);
+  font-size: .85rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: .8rem;
+  font-weight: 750;
+  margin-bottom: 6px;
+  color: var(--navy);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dce3e9;
+  border-radius: 10px;
+  font: inherit;
+  font-size: .88rem;
+  outline: none;
+  transition: .25s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(24,182,164,.1);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  border: 0;
+}
+
+/* FOOTER */
+
+footer {
+  background: #0b1422;
+  color: #b8c5d4;
+  padding: 35px 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-brand {
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 850;
+}
+
+.footer-brand span {
+  color: var(--teal);
+}
+
+.footer-content p {
+  font-size: .8rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 17px;
+}
+
+.footer-links a {
+  color: #b8c5d4;
+  font-size: .82rem;
+}
+
+.footer-links a:hover {
+  color: var(--teal);
+}
+
+/* SCROLL PROGRESS */
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, var(--teal), var(--gold));
+  z-index: 2000;
+}
+
+/* BACK TO TOP */
+
+.back-to-top {
+  position: fixed;
+  right: 23px;
+  bottom: 23px;
+  width: 47px;
+  height: 47px;
+  display: grid;
+  place-items: center;
+  background: var(--teal);
+  color: var(--navy);
+  border: 0;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  font-weight: 900;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: .3s;
+  z-index: 900;
+  box-shadow: 0 8px 25px rgba(0,0,0,.18);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px);
+}
+
+/* REVEAL ANIMATIONS */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: .1s; }
+.delay-2 { transition-delay: .2s; }
+.delay-3 { transition-delay: .3s; }
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+  .nav-links { gap: 14px; }
+  .nav-links a { font-size: .77rem; }
+  .hero-grid { gap: 35px; }
+  .hero-photo-wrap { max-width: 330px; }
+  .photo-frame img,
+  .photo-fallback { height: 420px; }
+  .impact-grid { grid-template-columns: repeat(2, 1fr); }
+  .skills-grid,
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 760px) {
+  section { padding: 75px 0; }
+
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    background: var(--navy);
+    padding: 20px 5% 25px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    border-top: 1px solid rgba(255,255,255,.1);
+  }
+
+  .nav-links.open { display: flex; }
+
+  .nav-links li a {
+    display: block;
+    padding: 12px 0;
+    font-size: .93rem;
+  }
+
+  .nav-links .nav-contact {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 18px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding-top: 125px;
+    min-height: auto;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-description { margin-inline: auto; }
+  .hero-actions,
+  .hero-socials { justify-content: center; }
+  .hero-photo-wrap { max-width: 290px; margin-top: 25px; }
+  .photo-frame img,
+  .photo-fallback { height: 370px; }
+  .photo-note { left: -18px; }
+
+  .intro-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-grid,
+  .contact-grid { grid-template-columns: 1fr; }
+  .project-grid,
+  .education-grid { grid-template-columns: 1fr; }
+  .footer-content { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 500px) {
+  .hero h1 { letter-spacing: -1.5px; }
+  .intro-grid { grid-template-columns: 1fr 1fr; gap: 13px; }
+  .intro-item { font-size: .72rem; }
+  .intro-item strong { font-size: .78rem; }
+  .intro-icon { width: 36px; height: 36px; }
+  .impact-grid,
+  .skills-grid,
+  .service-grid { grid-template-columns: 1fr; }
+  .about-values { grid-template-columns: 1fr; }
+  .timeline-item { padding-left: 38px; }
+  .timeline-card { padding: 20px; }
+  .contact-form { padding: 22px; }
+  .hero-actions .btn { width: 100%; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header>
+  <nav class="navbar container" aria-label="Main navigation">
+    <a href="#home" class="logo">ITUNU <span>BLESSING.</span></a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-contact">Let's Connect</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+
+    <div class="hero-content reveal">
+      <div class="hero-tag">
+        <span class="status-dot"></span>
+        PROFESSIONAL PORTFOLIO
+      </div>
+
+      <p class="hero-role">
+        Sales Development · Customer Experience · CRM · IT Support
+      </p>
+
+      <h1>
+        Itunu Blessing<br>
+        <span>Egbowon.</span>
+      </h1>
+
+      <p class="hero-description">
+        I bring together customer understanding, sales development,
+        communication, relationship management and technology to help
+        businesses build meaningful customer relationships and deliver
+        better experiences.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Explore My Work →</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/itunu-egbowon-280836227/"
+           target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="mailto:Itunublessing.egbowon@gmail.com">Email ↗</a>
+        <a href="tel:+2349064273560">Call ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap reveal delay-2">
+      <div class="photo-frame">
+        <img
+          src="itunu.jpg"
+          alt="Professional portrait of Itunu Blessing Egbowon"
+          id="profilePhoto"
+          onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='flex';"
+        >
+        <div class="photo-fallback" id="photoFallback">
+          IE
+          <span style="font-size:.85rem;font-weight:600;">Itunu Egbowon</span>
+        </div>
+      </div>
+
+      <div class="photo-note">
+        Professional. Purposeful. People-focused.
+        <span>Focused on meaningful results</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- INTRO STRIP -->
+<div class="intro-strip">
+  <div class="container intro-grid">
+
+    <div class="intro-item">
+      <div class="intro-icon">◎</div>
+      <div><strong>Sales Development</strong>Customer acquisition</div>
+    </div>
+
+    <div class="intro-item">
+      <div class="intro-icon">♡</div>
+      <div><strong>Customer Experience</strong>Relationship building</div>
+    </div>
+
+    <div class="intro-item">
+      <div class="intro-icon">▤</div>
+      <div><strong>CRM</strong>Customer management</div>
+    </div>
+
+    <div class="intro-item">
+      <div class="intro-icon">⌘</div>
+      <div><strong>IT Support</strong>Technology assistance</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="eyebrow">Get to know me</span>
+      <h2>People, relationships and <span class="gradient-text">purposeful work.</span></h2>
+      <p>
+        A professional introduction to my experience, approach and
+        commitment to helping people and businesses move forward.
+      </p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-card reveal">
+        <h3>My professional philosophy</h3>
+        <p>
+          Every customer interaction is an opportunity to listen,
+          understand, solve a problem and build trust. I believe that
+          professional excellence is not only about completing tasks;
+          it is also about the care, consistency and responsibility
+          brought to the work.
+        </p>
+      </div>
+
+      <div class="about-content reveal delay-1">
+        <p>
+          I am <strong>Itunu Blessing Egbowon</strong>, a sales development
+          and customer experience professional with experience across
+          sales development, customer service and business-facing roles.
+        </p>
+
+        <p>
+          My professional interests include lead generation, customer
+          relationship management, customer support, communication,
+          sales operations and IT support. I value clear communication,
+          active listening, accountability and the ability to understand
+          what customers actually need.
+        </p>
+
+        <p>
+          Through professional experience and continued learning, I have
+          developed an interest in using digital tools and structured
+          processes to make customer interactions and business operations
+          more effective.
+        </p>
+
+        <div class="about-values">
+          <div class="value-item"><span>✓</span> Customer-focused</div>
+          <div class="value-item"><span>✓</span> Clear communication</div>
+          <div class="value-item"><span>✓</span> Problem-solving mindset</div>
+          <div class="value-item"><span>✓</span> Continuous development</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="eyebrow">Professional journey</span>
+      <h2>Experience built through <span class="gradient-text">real work.</span></h2>
+      <p>
+        My professional journey includes sales development and
+        customer-facing responsibilities in different business environments.
+      </p>
+    </div>
+
+    <div class="timeline">
+
+      <article class="timeline-item reveal">
+        <span class="timeline-dot"></span>
+        <div class="timeline-card">
+          <span class="timeline-date">2025 – August 2026</span>
+          <h3>Sales Development Supervisor</h3>
+          <h4>Eversearch Flame Ventures</h4>
+          <p>
+            Sales development and customer-facing responsibilities,
+            supporting business growth through communication,
+            prospect engagement and sales-related activities.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal">
+        <span class="timeline-dot"></span>
+        <div class="timeline-card">
+          <span class="timeline-date">May 2023 – October 2023</span>
+          <h3>Sales Development Representative</h3>
+          <h4>Lush Hair Limited</h4>
+          <p>
+            Worked in a sales development role involving customer
+            engagement, product communication and sales support.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal">
+        <span class="timeline-dot"></span>
+        <div class="timeline-card">
+          <span class="timeline-date">August 2021 – April 2023</span>
+          <h3>Sales Development Representative & Customer Service</h3>
+          <h4>Greenbliss</h4>
+          <p>
+            Supported sales and customer service activities, with
+            responsibilities centred on customer communication,
+            service and business relationships.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-item reveal">
+        <span class="timeline-dot"></span>
+        <div class="timeline-card">
+          <span class="timeline-date">2018 – 2019</span>
+          <h3>Sales Development Representative</h3>
+          <h4>Paycom Nigeria Limited (OPay)</h4>
+          <p>
+            Gained experience in sales development and customer-facing
+            business activities in a technology-enabled financial services
+            environment.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="impact" id="impact">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="eyebrow">Professional impact</span>
+      <h2>Work measured by <span class="gradient-text">meaningful outcomes.</span></h2>
+      <p>
+        Selected performance figures previously provided for this
+        professional profile. They are presented as reported experience
+        highlights rather than independently audited results.
+      </p>
+    </div>
+
+    <div class="impact-grid">
+
+      <div class="impact-card reveal">
+        <h3 class="counter" data-target="300" data-suffix="+">0</h3>
+        <p>Apartment bookings</p>
+      </div>
+
+      <div class="impact-card reveal delay-1">
+        <h3 class="counter" data-target="200" data-suffix="+">0</h3>
+        <p>Daily calls handled</p>
+      </div>
+
+      <div class="impact-card reveal delay-2">
+        <h3 class="counter" data-target="1000" data-suffix="+">0</h3>
+        <p>Goods movements coordinated</p>
+      </div>
+
+      <div class="impact-card reveal delay-3">
+        <h3>₦10M+</h3>
+        <p>Monthly sales figure reported</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="eyebrow">Capabilities</span>
+      <h2>Skills that support <span class="gradient-text">business growth.</span></h2>
+      <p>
+        A combination of customer-facing, sales, communication and
+        technology-related capabilities.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+
+      <article class="skill-card reveal">
+        <div class="skill-icon">◎</div>
+        <h3>Sales Development</h3>
+        <p>
+          Prospect engagement, lead generation, customer acquisition
+          and sales communication.
+        </p>
+      </article>
+
+      <article class="skill-card reveal delay-1">
+        <div class="skill-icon">♡</div>
+        <h3>Customer Experience</h3>
+        <p>
+          Customer communication, active listening, relationship
+          building and service support.
+        </p>
+      </article>
+
+      <article class="skill-card reveal delay-2">
+        <div class="skill-icon">▤</div>
+        <h3>CRM Management</h3>
+        <p>
+          Customer information management, relationship processes
+          and organised customer records.
+        </p>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-icon">⌘</div>
+        <h3>IT Support</h3>
+        <p>
+          Technical support learning, technology assistance,
+          troubleshooting awareness and user-focused communication.
+        </p>
+      </article>
+
+      <article class="skill-card reveal delay-1">
+        <div class="skill-icon">✉</div>
+        <h3>Communication</h3>
+        <p>
+          Professional communication, customer conversations,
+          follow-up and information sharing.
+        </p>
+      </article>
+
+      <article class="skill-card reveal delay-2">
+        <div class="skill-icon">↗</div>
+        <h3>Business Operations</h3>
+        <p>
+          Sales support, coordination, customer engagement and
+          business process awareness.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="eyebrow">Selected work</span>
+      <h2>Learning, projects and <span class="gradient-text">practical exposure.</span></h2>
+      <p>
+        A selection of technology and customer-support-related areas
+        associated with my professional development.
+      </p>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <div class="project-symbol">✉</div>
+          <span class="project-label">Customer Support</span>
+        </div>
+        <h3>Freshdesk</h3>
+        <p>
+          Customer support platform exposure and an interest in
+          organised support workflows, customer enquiries and
+          service communication.
+        </p>
+        <div class="project-tags">
+          <span>Customer Support</span>
+          <span>Helpdesk</span>
+          <span>Service Workflow</span>
+        </div>
+        <span class="project-link">Support technology exposure</span>
+      </article>
+
+      <article class="project-card reveal delay-1">
+        <div class="project-top">
+          <div class="project-symbol">◇</div>
+          <span class="project-label">Digital Project</span>
+        </div>
+        <h3>MitaKit</h3>
+        <p>
+          A project reference included in my professional portfolio
+          to showcase my exposure to digital tools and continued
+          technology development.
+        </p>
+        <div class="project-tags">
+          <span>Digital Tools</span>
+          <span>Technology</span>
+          <span>Learning</span>
+        </div>
+        <span class="project-link">Project reference</span>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <div class="project-symbol">✦</div>
+          <span class="project-label">Professional Training</span>
+        </div>
+        <h3>Digital Witch Support Community</h3>
+        <p>
+          Completed technology-related training and earned a
+          certificate through Digital Witch Support Community.
+          This forms part of my continued professional development
+          and interest in IT support.
+        </p>
+        <div class="project-tags">
+          <span>IT Support</span>
+          <span>Tech Training</span>
+          <span>Certificate</span>
+        </div>
+        <a class="project-link"
+           href="https://www.linkedin.com/company/digital-witch-support-community/"
+           target="_blank" rel="noopener noreferrer">
+          Visit organisation ↗
+        </a>
+      </article>
+
+      <article class="project-card reveal delay-1">
+        <div class="project-top">
+          <div class="project-symbol">▣</div>
+          <span class="project-label">Customer Relations</span>
+        </div>
+        <h3>Customer Engagement & Sales Development</h3>
+        <p>
+          Professional experience across sales development and
+          customer service roles, with an emphasis on customer
+          communication, lead engagement and relationship building.
+        </p>
+        <div class="project-tags">
+          <span>Sales</span>
+          <span>Lead Generation</span>
+          <span>Customer Relations</span>
+        </div>
+        <span class="project-link">Professional experience</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="eyebrow">Education & credentials</span>
+      <h2>Knowledge, learning and <span class="gradient-text">development.</span></h2>
+      <p>
+        Formal education and professional training supporting my
+        career development.
+      </p>
+    </div>
+
+    <div class="education-grid">
+
+      <article class="education-card reveal">
+        <div class="education-icon">🎓</div>
+        <div>
+          <h3>Higher National Diploma (HND)</h3>
+          <p>Kwara State College of Health Technology, Offa, Kwara State, Nigeria.</p>
+        </div>
+      </article>
+
+      <article class="education-card reveal delay-1">
+        <div class="education-icon">🏅</div>
+        <div>
+          <h3>Digital Witch Support Community — Tech Certificate</h3>
+          <p>
+            Technology-related professional training and IT Support
+            development.
+          </p>
+          <p>
+            <a class="project-link"
+               href="https://www.linkedin.com/company/digital-witch-support-community/"
+               target="_blank" rel="noopener noreferrer">
+              Organisation page ↗
+            </a>
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="eyebrow">Professional focus</span>
+      <h2>Ways I can contribute to <span class="gradient-text">your team.</span></h2>
+      <p>
+        Areas where my experience and developing technical knowledge
+        can support organisations and customers.
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <article class="service-card reveal">
+        <div class="skill-icon">◎</div>
+        <h3>Sales Development</h3>
+        <p>
+          Supporting prospect engagement, lead generation,
+          customer acquisition and sales conversations.
+        </p>
+      </article>
+
+      <article class="service-card reveal delay-1">
+        <div class="skill-icon">♡</div>
+        <h3>Customer Support</h3>
+        <p>
+          Helping customers receive clear communication,
+          attentive service and helpful support.
+        </p>
+      </article>
+
+      <article class="service-card reveal delay-2">
+        <div class="skill-icon">▤</div>
+        <h3>CRM & Customer Records</h3>
+        <p>
+          Supporting organised customer information and
+          relationship-management activities.
+        </p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="skill-icon">⌘</div>
+        <h3>IT Support</h3>
+        <p>
+          Applying developing technical knowledge and
+          communication skills to user-support activities.
+        </p>
+      </article>
+
+      <article class="service-card reveal delay-1">
+        <div class="skill-icon">✉</div>
+        <h3>Customer Communication</h3>
+        <p>
+          Supporting follow-ups, customer conversations
+          and professional business communication.
+        </p>
+      </article>
+
+      <article class="service-card reveal delay-2">
+        <div class="skill-icon">↗</div>
+        <h3>Sales Operations Support</h3>
+        <p>
+          Contributing to organised sales activities,
+          customer engagement and business coordination.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="eyebrow">Let's connect</span>
+      <h2>Good work begins with <span class="gradient-text">a conversation.</span></h2>
+      <p>
+        Are you recruiting, building a team, looking for customer-facing
+        talent or interested in professional collaboration? I would be
+        glad to hear from you.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+
+        <div class="contact-item">
+          <div class="icon">✉</div>
+          <div>
+            <small>Email address</small>
+            <a href="mailto:Itunublessing.egbowon@gmail.com">
+              Itunublessing.egbowon@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">☎</div>
+          <div>
+            <small>Phone / WhatsApp</small>
+            <a href="https://wa.me/2349064273560"
+               target="_blank" rel="noopener noreferrer">
+              +234 906 427 3560
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">in</div>
+          <div>
+            <small>LinkedIn profile</small>
+            <a href="https://www.linkedin.com/in/itunu-egbowon-280836227/"
+               target="_blank" rel="noopener noreferrer">
+              Connect on LinkedIn ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">⌖</div>
+          <div>
+            <small>Location</small>
+            <strong>Lagos, Nigeria</strong>
+          </div>
+        </div>
+
+      </div>
+
+      <form class="contact-form reveal delay-1" id="contactForm">
+        <h3>Send a message</h3>
+        <p>
+          Complete the details below. Your email application will open
+          with the message prepared for sending.
+        </p>
+
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name"
+                 placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email"
+                 placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject"
+                 placeholder="What would you like to discuss?" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message"
+                    placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Prepare Email Message →
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-content">
+
+    <a href="#home" class="footer-brand">
+      ITUNU <span>BLESSING.</span>
+    </a>
+
+    <p>
+      © <span id="currentYear"></span> Itunu Blessing Egbowon.
+      All rights reserved.
+    </p>
+
+    <div class="footer-links">
+      <a href="#home">Back to Home</a>
+      <a href="https://www.linkedin.com/in/itunu-egbowon-280836227/"
+         target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    </div>
+
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop"
+        aria-label="Scroll back to top" title="Back to top">
+  ↑
+</button>
+
+<script>
+/* =========================================
+   PORTFOLIO INTERACTIONS & AUTOMATION
+========================================= */
+
+// MOBILE NAVIGATION
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.textContent = isOpen ? "×" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  });
+});
+
+// CURRENT YEAR
+document.getElementById("currentYear").textContent =
+  new Date().getFullYear();
+
+// SCROLL PROGRESS, BACK TO TOP AND ACTIVE NAVIGATION
+const progress = document.getElementById("scrollProgress");
+const backToTop = document.getElementById("backToTop");
+const sections = document.querySelectorAll("main section[id]");
+const navigationLinks = document.querySelectorAll(".nav-links a");
+
+function handleScroll() {
+  const scrollTop = window.scrollY;
+  const scrollable =
+    document.documentElement.scrollHeight - window.innerHeight;
+
+  const percentage = scrollable > 0
+    ? (scrollTop / scrollable) * 100
+    : 0;
+
+  progress.style.width = percentage + "%";
+
+  backToTop.classList.toggle("show", scrollTop > 450);
+
+  let currentSection = "home";
+
+  sections.forEach(section => {
+    if (scrollTop >= section.offsetTop - 150) {
+      currentSection = section.id;
+    }
+  });
+
+  navigationLinks.forEach(link => {
+    link.classList.toggle(
+      "active",
+      link.getAttribute("href") === "#" + currentSection
+    );
+  });
+}
+
+window.addEventListener("scroll", handleScroll, { passive: true });
+handleScroll();
+
+// BACK TO TOP
+backToTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+// REVEAL ELEMENTS AS THEY ENTER THE VIEWPORT
+const revealElements = document.querySelectorAll(".reveal");
+
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12
+  });
+
+  revealElements.forEach(element => {
+    revealObserver.observe(element);
+  });
+} else {
+  revealElements.forEach(element => {
+    element.classList.add("visible");
+  });
+}
+
+// ANIMATED IMPACT COUNTERS
+const counters = document.querySelectorAll(".counter");
+
+function animateCounter(element) {
+  const target = Number(element.dataset.target);
+  const suffix = element.dataset.suffix || "";
+  const duration = 1600;
+  const startTime = performance.now();
+
+  function updateCounter(now) {
+    const progressValue = Math.min((now - startTime) / duration, 1);
+    const eased = 1 - Math.pow(1 - progressValue, 3);
+    const current = Math.floor(target * eased);
+
+    element.textContent = current.toLocaleString() + suffix;
+
+    if (progressValue < 1) {
+      requestAnimationFrame(updateCounter);
+    } else {
+      element.textContent = target.toLocaleString() + suffix;
+    }
+  }
+
+  requestAnimationFrame(updateCounter);
+}
+
+if ("IntersectionObserver" in window) {
+  const counterObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+
+  counters.forEach(counter => counterObserver.observe(counter));
+} else {
+  counters.forEach(animateCounter);
+}
+
+// CONTACT FORM
+// This prepares an email in the visitor's email application.
+// It does not silently send or store messages.
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const subject = document.getElementById("subject").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !subject || !message) {
+    alert("Please complete all fields before continuing.");
+    return;
+  }
+
+  const recipient = "Itunublessing.egbowon@gmail.com";
+
+  const emailSubject = encodeURIComponent(subject);
+  const emailBody = encodeURIComponent(
+    "Hello Itunu,\n\n" +
+    message +
+    "\n\nFrom: " + name +
+    "\nReply email: " + email
+  );
+
+  window.location.href =
+    "mailto:" + recipient +
+    "?subject=" + emailSubject +
+    "&body=" + emailBody;
+});
+
+// KEYBOARD ACCESSIBILITY: CLOSE MOBILE MENU WITH ESCAPE
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  }
+});
+</script>
+
+</body>
+</html>
